@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+
+<ul>
+  {% for crew in object_list %}
+    <li>
+      {{crew.id}}, {{ crew.title }}, {{ crew.content }}
+    </li>
+  {% endfor %}
+</ul>
